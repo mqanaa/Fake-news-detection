@@ -37,33 +37,33 @@ The project is divided into 7 parts:
 - **Scikit-learn** – Feature extraction, model training, and evaluation  
 - **NLTK** – Text processing and tokenization  
 - **SHAP** – Model interpretation and explainability  
+- **XGBoost** – Gradient boosting for classification  
+- **kagglehub** – Dataset download from Kaggle  
 
 ---
 
 ## Models Used  
 - Logistic Regression  
-- Passive Aggressive Classifier  
 - Random Forest Classifier  
+- XGBoost Classifier  
 - Multinomial Naive Bayes  
 
 ---
 
 ## Key Results  
-- Logistic Regression and Passive Aggressive Classifier performed best with high accuracy and balanced precision/recall.  
+- Logistic Regression and XGBoost performed best with high accuracy and balanced precision/recall.  
 - SHAP values provided insights into feature importance and model decision-making.  
 
 ---
 
 ### Steps to Run Locally
 1. Clone this repository.
-2. Install dependencies using:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Open the notebook:
+2. Open the notebook:
    ```bash
    jupyter notebook fake_news_detection.ipynb
    ```
+3. Run all cells
+- The notebook includes a preamble cell that automatically installs all required dependencies
 
 ## Future Improvements
 - Deploy the model as a web application or browser extension.
